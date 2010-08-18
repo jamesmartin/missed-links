@@ -5,6 +5,6 @@ Feature: a place to start
   I want a home page to visit
 
   Scenario: visiting the home page
-    Given I am a web user
+    Given I have a web browser 
     When I point my browser to the home page
     Then I should see "Welcome to Missed Links!"
