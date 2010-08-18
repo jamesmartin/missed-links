@@ -1,1 +1,8 @@
 %h1 Welcome to Missed Links! 
+
+%form{:name => "twitter_auth", :action => "POST"}
+  %label{:for => "twitter_username"}Username
+  %input{:type => "text", :name => "twitter_username", :id => "twitter_username"}
+  %label{:for => "twitter_password"}Password
+  %input{:type => "text", :name => "twitter_password", :id => "twitter_password"}
+  %input{:type => "submit", :name => "Login", :id => "twitter_login"}
