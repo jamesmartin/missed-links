@@ -9,4 +9,8 @@ class RootApp < Sinatra::Base
     haml :index 
   end
 
+  get '/auth' do
+    "Twitter authentication"
+  end
+
 end

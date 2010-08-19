@@ -17,10 +17,8 @@ Given /I am not authenticated with Twitter$/ do
   #pending "figure out how to fake a twitter OAuth service"
 end
 
-Given /^I submit the login form with username "([^\"]*)" and password "([^\"]*)"$/ do |username, password|
-  @browser.text_field(:name, 'twitter_username').set(username)
-  @browser.text_field(:name, 'twitter_password').set(password)
-  @browser.form(:name, 'twitter_auth').submit
+When /I click the "([^\"]*)" link$/ do |link_text|
+  @browser.link(:text, link_text).click
 end
 
 Then /I should see "([^\"]*)"$/ do |greeting|
@@ -32,7 +30,7 @@ Then /^I should see a "([^\"]*)" link$/ do |link_text|
   @browser.link(:text, link_text).exists?.should be_true
 end
 
-Then /^I should be redirected to the Twitter authentication page$/ do
-  @browser.contains_text("Twitter Authenticate").should be_true
+Then /^I should be redirected to the "([^\"]*)" page$/ do |page_text|
+  @browser.contains_text(page_text).should be_true
 end
 
