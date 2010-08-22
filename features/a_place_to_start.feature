@@ -1,15 +1,7 @@
-Feature: a place to start
+Feature: basic web application behaviour 
 
-  In order to get started using Missed Links
-  As a web user
-  I want a home page to visit
-
-  Scenario: visiting the home page
-    Given I have a web browser 
-    When I point my browser to the home page
-    Then I should see "Welcome to Missed Links!"
-
-  Scenario: a way to authenticate with Twitter 
-    Given I am at the home page 
-    And I am not authenticated with Twitter
-    Then I should see a "Login with Twitter" link 
+  Scenario: Web application displays a home page and option to authenticate 
+    Given that the authentication service is running 
+      And the web application has started
+    When the user browses to the home page
+    Then the user is able to attempt authentication
