@@ -1,0 +1,17 @@
+TODO:
++ Authenticate with social network, display no results
++ Authenticate with social network, display a single URI
++ Authenticate with social network, display multiple URI
++ Sort URI into types: Video, Image, Other
++ Display final URI, for shortened links
++ Display URI with associated contact information
+
+Nice to have:
++ Send to other social network 
++ Send to Instapaper
++ Send to Delicious?
+
+Other:
++ Look into Cucumber/Webrat usage with Sinatra apps
+
+
