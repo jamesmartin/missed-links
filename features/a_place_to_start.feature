@@ -1,7 +1,7 @@
-Feature: basic web application OAuth dance behaviour 
+Feature: basic web application behaviour 
 
-  Scenario: Web application allows the web user to authenticate with a third party 
-    Given that the authentication provider service is running 
+  Scenario: Web application connects the user with their social media feed 
+    Given that the social media provider is available 
       And the web application has started
     When the user browses to the home page
     Then the web application prompts the user to authenticate with the authentication provider service 
