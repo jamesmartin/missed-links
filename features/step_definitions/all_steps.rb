@@ -1,4 +1,4 @@
-
-Given /^that the authentication provider service is running$/ do
-  @authentication_provider = FakeAuthenciationProviderService.new
+Given /^that the social network feed returns no results$/ do
+  social_network = SocialNetwork.new()
+  social_network.respond_to('/some/path') 
 end

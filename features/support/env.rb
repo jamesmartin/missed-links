@@ -1,3 +1,3 @@
 After do
-  @authentication_provider.stop
+  @social_network.stop
 end
