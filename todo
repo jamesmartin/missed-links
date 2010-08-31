@@ -13,5 +13,14 @@ Nice to have:
 
 Other:
 + Look into Cucumber/Webrat usage with Sinatra apps (RSpec book Ch.22)
++ Look at fake twitter service using WebMock or FakeWeb
++ Bam! Thoughtbot FTW. This will help me get a Fake Twitter going:
+  http://robots.thoughtbot.com/post/595666104/localized-external-services
+  - Potential problem: Fakes out Net::HTTP, so actually avoids full-stack testing (doesn't even used local network iface!)
++ Artifice looks pretty nice for faking a REST service: http://github.com/wycats/artifice
+  Example: http://github.com/croaky/rack-oauth/blob/master/spec/spec_helper.rb
+  - Seems to have the same problem as the above
++ VCR has a very quirky analogy (would probably need wrapping in any case) but records and plays back:
+  http://github.com/myronmarston/vcr
 
 
