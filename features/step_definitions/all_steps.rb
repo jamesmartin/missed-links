@@ -3,7 +3,7 @@ Given /^that we have a social network feed, called "([^\"]*)"$/ do |name|
 end
 
 Given /^we have a user with a Twitter username of "([^\"]*)"$/ do |twitter_username|
-  remember_user(twitter_username)
+  remember_social_network_user(twitter_username)
 end
 
 Given /^Twusr has no recent activity in their social network feed$/ do
@@ -15,7 +15,7 @@ When /^Twusr visits the home page$/ do
 end
 
 Then /^the application prompts Twusr to login via Twitter$/ do
-  users_browser.should be_at "http://twitter.com/authorize"
+  users_browser.should be_redirected_to_the_url("http://twitter.com/authorize")
 end
 
 When /^Twusr authenticates successfully$/ do

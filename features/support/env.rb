@@ -1,1 +1,4 @@
+require 'spec'
+require 'webrat'
+
 
